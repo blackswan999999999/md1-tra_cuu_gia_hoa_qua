@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tra cứu giá</title>
+
+<body>
+<h1> Giá hoa quả</h1>
+<input type="text" name="tên rau quả" id="s1"> <input type="button" id="s2" value="xem giá" onclick="checker()">
+
+</body>
+<script>
+    let a = document.getElementById('s1')
+
+    function checker() {
+        switch (a) {
+            case 'Ổi':
+                alert('20000 VNĐ/Kg')
+                break;
+                case 'Dưa Hấu':
+                    alert('300000 VNĐ/kg')
+                break;
+        }
+    }
+</script>
+</html>
