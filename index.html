@@ -6,19 +6,34 @@
 
 <body>
 <h1> Giá hoa quả</h1>
-<input type="text" name="tên rau quả" id="s1"> <input type="button" id="s2" value="xem giá" onclick="checker()">
-
+<input type="text" name="tên rau quả" id="s1"> <input type="button" value="xem giá" onclick="checker()">
+<h3 id="s3"></h3>
 </body>
 <script>
-    let a = document.getElementById('s1')
+
 
     function checker() {
+        var a = document.getElementById('s1').value;
+        console.log('giá trị nhập vào', a)
+        // đưa giá trị input vào hàm
         switch (a) {
             case 'Ổi':
-                alert('20000 VNĐ/Kg')
+                p3 = document.getElementById('s3').innerHTML = '20000 VNĐ/Kg'
                 break;
-                case 'Dưa Hấu':
-                    alert('300000 VNĐ/kg')
+            case 'Dưa Hấu':
+                p3 = document.getElementById('s3').innerHTML = '20000 VNĐ/Kg'
+                break;
+            case 'Táo':
+                p3 = document.getElementById('s3').innerHTML = '30000 VNĐ/Kg'
+                break;
+            case 'Xoài':
+                p3 = document.getElementById('s3').innerHTML = '30000 VNĐ/Kg'
+                break;
+            case    'Chôm chôm':
+                p3 = document.getElementById('s3').innerHTML = '40000 VNĐ/Kg'
+                break;
+            case 'Măng Cụt':
+                p3 = document.getElementById('s3').innerHTML = '50000 VNĐ/Kg'
                 break;
         }
     }
