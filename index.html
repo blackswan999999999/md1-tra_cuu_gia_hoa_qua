@@ -10,7 +10,10 @@
 <h3 id="s3"></h3>
 </body>
 <script>
-
+ let x='20000 VNĐ/KG'
+ let y='30000 VNĐ/Kg'
+ let z= '40000 VNĐ/Kg'
+ let t='50000 VNĐ/Kg'
 
     function checker() {
         var a = document.getElementById('s1').value;
@@ -18,22 +21,22 @@
         // đưa giá trị input vào hàm
         switch (a) {
             case 'Ổi':
-                p3 = document.getElementById('s3').innerHTML = '20000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML =x
                 break;
             case 'Dưa Hấu':
-                p3 = document.getElementById('s3').innerHTML = '20000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML = x
                 break;
             case 'Táo':
-                p3 = document.getElementById('s3').innerHTML = '30000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML = y
                 break;
             case 'Xoài':
-                p3 = document.getElementById('s3').innerHTML = '30000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML = y
                 break;
             case    'Chôm chôm':
-                p3 = document.getElementById('s3').innerHTML = '40000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML = z
                 break;
             case 'Măng Cụt':
-                p3 = document.getElementById('s3').innerHTML = '50000 VNĐ/Kg'
+                p3 = document.getElementById('s3').innerHTML = t
                 break;
         }
     }
